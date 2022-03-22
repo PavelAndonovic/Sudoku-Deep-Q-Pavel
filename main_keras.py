@@ -6,8 +6,8 @@ from boardenv import board
 
 if __name__ == '__main__':
     env = board()
-    n_games = 50
-    agent = Agent(gamma=0.99, epsilon=1.0, alpha=0.0005, input_dims=(9, 9, 1),
+    n_games = 500
+    agent = Agent(gamma=0.99, epsilon=1.0, alpha=0.0005, input_dims=3,
                   n_actions=13, mem_size=1000000, batch_size=64, epsilon_end=0.01)
 
     scores=[]

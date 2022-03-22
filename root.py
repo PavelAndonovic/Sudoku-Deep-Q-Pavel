@@ -9,12 +9,12 @@ df_train = pd.read_csv(PATH,
                        names=COLUMNS,
                        index_col=False)
 
-quizzescount = 1  # df_train['quizzes'].count()
+quizzescount = 500  # df_train['quizzes'].count()
 
 
 def run_maze():
     step = 0
-    episodes = 10
+    episodes = 2000
     for episode in range(episodes):
         currentstate = env.reset()
         while True:
